@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Rymote</string>
+
+    <string name="musique">Musique</string>
+    <string name="action_settings">Settings</string>
+    <string name="musique_toggle">Toggle Play</string>
+    <string name="musique_next">Play Next</string>
+    <string name="rhythmbox">Rhythmbox</string>
+    <string name="rhythmbox_play">Play</string>
+    <string name="rhythmbox_pause">Pause</string>
+    <string name="rhythmbox_next">Next</string>
+    <string name="firefox">Firefox</string>
+</resources>
