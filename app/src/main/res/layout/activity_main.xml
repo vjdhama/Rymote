@@ -80,14 +80,14 @@
                         style="?android:attr/buttonStyleSmall"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/rhythmbox_play"
+                        android:text="@string/play"
                         android:id="@+id/rhythmbox_play"/>
 
                     <Button
                         style="?android:attr/buttonStyleSmall"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/rhythmbox_pause"
+                        android:text="@string/pause"
                         android:id="@+id/rhythmbox_pause"
                         android:layout_alignParentBottom="true"
                         android:layout_toRightOf="@id/rhythmbox_play" />
@@ -95,12 +95,71 @@
                         style="?android:attr/buttonStyleSmall"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/rhythmbox_next"
+                        android:text="@string/next"
                         android:id="@+id/rhythmbox_next"
                         android:layout_alignParentBottom="true"
                         android:layout_toRightOf="@id/rhythmbox_pause" />
                 </LinearLayout>
             </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/vlc_layout"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView android:text="@string/vlc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#2095F2"
+                    android:id="@+id/textview_vlc"
+                    android:paddingBottom="10dp"
+                    android:layout_centerHorizontal="true"/>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_below="@+id/textview_vlc">
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/play"
+                        android:id="@+id/vlc_play"/>
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pause"
+                        android:id="@+id/vlc_pause"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toRightOf="@id/vlc_play" />
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/next"
+                        android:id="@+id/vlc_next"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toRightOf="@id/vlc_pause" />
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/stop"
+                        android:id="@+id/vlc_stop"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toRightOf="@id/vlc_next" />
+                </LinearLayout>
+            </RelativeLayout>
+
 
             <RelativeLayout
                 android:layout_width="fill_parent"

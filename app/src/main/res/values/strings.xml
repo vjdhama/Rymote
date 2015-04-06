@@ -6,8 +6,10 @@
     <string name="musique_toggle">Toggle Play</string>
     <string name="musique_next">Play Next</string>
     <string name="rhythmbox">Rhythmbox</string>
-    <string name="rhythmbox_play">Play</string>
-    <string name="rhythmbox_pause">Pause</string>
-    <string name="rhythmbox_next">Next</string>
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="next">Next</string>
+    <string name="stop">Stop</string>
+    <string name="vlc">Vlc</string>
     <string name="firefox">Firefox</string>
 </resources>

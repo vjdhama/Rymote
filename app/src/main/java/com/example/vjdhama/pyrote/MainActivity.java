@@ -52,6 +52,10 @@ public class MainActivity extends ActionBarActivity {
         params.put("rhythmbox_play", "?state=play");
         params.put("rhythmbox_pause", "?state=pause");
         params.put("rhythmbox_next", "?state=next");
+        params.put("vlc_play", "?state=play");
+        params.put("vlc_pause", "?state=pause");
+        params.put("vlc_next", "?state=next");
+        params.put("vlc_stop", "?state=stop");
         params.put("firefox_open", "?url=");
         params.put("volume", "?amount=");
 
@@ -65,6 +69,10 @@ public class MainActivity extends ActionBarActivity {
         Button rhythmbox_play = (Button) findViewById(R.id.rhythmbox_play);
         Button rhythmbox_pause = (Button) findViewById(R.id.rhythmbox_pause);
         Button rhythmbox_next = (Button) findViewById(R.id.rhythmbox_next);
+        Button vlc_play = (Button) findViewById(R.id.vlc_play);
+        Button vlc_pause = (Button) findViewById(R.id.vlc_pause);
+        Button vlc_next = (Button) findViewById(R.id.vlc_next);
+        Button vlc_stop = (Button) findViewById(R.id.vlc_stop);
         Button firefox_open = (Button) findViewById(R.id.firefox_button);
         Button volume_button = (Button) findViewById(R.id.volume_set_button);
 
@@ -104,6 +112,34 @@ public class MainActivity extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 getJsonData("rhythmbox", (String) params.get("rhythmbox_next"), BASE_URL);
+            }
+        });
+
+        vlc_play.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getJsonData("vlc", (String) params.get("vlc_play"), BASE_URL);
+            }
+        });
+
+        vlc_pause.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getJsonData("vlc", (String) params.get("vlc_pause"), BASE_URL);
+            }
+        });
+
+        vlc_next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getJsonData("vlc", (String) params.get("vlc_next"), BASE_URL);
+            }
+        });
+
+        vlc_stop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getJsonData("vlc", (String) params.get("vlc_stop"), BASE_URL);
             }
         });
 
